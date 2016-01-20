@@ -37,13 +37,19 @@ class AuthController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest', [
-            'except' => [
-                'logout',
-                'showRegistrationForm',
-                'register'
-            ]
-        ]);
+        $this->middleware('guest', ['except' => 'logout']);
+    }
+
+    /**
+     *
+     */
+    public function showRegistrationForm()
+    {
+        return redirect('login');
+    }
+
+    public function register()
+    {
     }
 
     /**
