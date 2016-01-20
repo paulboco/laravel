@@ -8,7 +8,8 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    You are logged in!
+                    <h3>You are logged in!</h3>
+                    <a href="{{ url('/register') }}">Register</a>
                 </div>
             </div>
         </div>
