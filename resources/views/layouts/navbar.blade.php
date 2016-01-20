@@ -15,7 +15,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Shiphed ({{ Auth::guest() ? 'true' : 'false' }})
+                    Shiphed
                 </a>
             </div>
 
