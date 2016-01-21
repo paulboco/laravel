@@ -3,5 +3,7 @@
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
-    Route::get('/{dashboard?}', 'DashboardController@index');
+    Route::get('/property', 'PropertyController@index');
+
+    Route::get('/{foo?}', 'DashboardController@index');
 });

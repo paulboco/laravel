@@ -15,14 +15,14 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Shiphed
+                    Dashboard
                 </a>
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/dashboard') }}">Dashboard</a></li>
+                    <li><a href="{{ url('/properties') }}">Properties</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -34,6 +34,8 @@
                         </a>
 
                         <ul class="dropdown-menu" role="menu">
+                            <li><a href="{{ url('/register') }}">Register New User</a></li>
+                            <li role="separator" class="divider"></li>
                             <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
                         </ul>
                     </li>

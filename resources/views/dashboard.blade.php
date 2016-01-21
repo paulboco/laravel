@@ -9,7 +9,6 @@
 
                 <div class="panel-body">
                     <h3>You are logged in!</h3>
-                    <a href="{{ url('/register') }}">Register</a>
                 </div>
             </div>
         </div>
