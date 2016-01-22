@@ -22,7 +22,19 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/properties') }}">Properties</a></li>
+                    <li><a href="{{ url('/property') }}">Properties</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ url('/tenant') }}">Tenants</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ url('/todo') }}">To Do</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ url('/receipt') }}">Receipts</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ url('/utility') }}">Utilities</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->

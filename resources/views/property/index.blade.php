@@ -17,14 +17,11 @@
                         <tbody>
                             @foreach($properties as $property)
                                 <tr>
-                                    <td>{{ $property->property_street_name }}</td>
+                                    <td>{{ $property->fullStreetAddress() }}</td>
                                 </tr>
                             @endforeach
                         </tbody>
                     </table>
-                    <pre>
-                        {{ var_export($properties, true)}}
-                    </pre>
                 </div>
             </div>
         </div>

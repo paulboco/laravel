@@ -25,8 +25,10 @@ class PropertyController extends Controller
      */
     public function index()
     {
-        return view('property.index', [
-            'properties' => Property::orderBy('property_street_name')->get(),
-        ]);
+        $properties = Property::sortByStreetAddress()
+            ->whereActive()
+            ->get();
+
+        return view('property.index', compact('properties'));
     }
 }

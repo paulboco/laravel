@@ -1,5 +1,7 @@
 <?php
 
+DB::enableQueryLog();
+
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
